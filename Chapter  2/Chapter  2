@@ -1,1 +1,13 @@
+import java.util.Scanner;
 
+public class task2 {
+    public static void main(String[] args) {
+        final double POUND_TO_KILOGRAM = 0.454;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number in pounds: ");
+        double pounds = scanner.nextDouble();
+        double kilograms = pounds * POUND_TO_KILOGRAM;
+        System.out.printf("%.1f pounds is %.3f kilograms\n", pounds, kilograms);
+        scanner.close();
+    }
+}
